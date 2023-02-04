@@ -18,13 +18,16 @@ const ingredients = [
 
 const listRef = document.querySelector('#ingredients');
 
-const listItem = ingredients.map(ingredient => { 
+const makeListOfingredients = ingredients => {
+  return ingredients.map(ingredient => { 
   
-  const itemRef= document.createElement('li');
-  itemRef.textContent = ingredient;
-  itemRef.classList.add('item');
-  return itemRef;
+      const itemRef= document.createElement('li');
+      itemRef.textContent = ingredient;
+      itemRef.classList.add('item');
+      return itemRef;
+    
+    })
+}
 
-});
-
+const listItem = makeListOfingredients(ingredients);
 listRef.append(...listItem);
