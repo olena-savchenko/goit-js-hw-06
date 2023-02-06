@@ -11,7 +11,7 @@ const inputRef = document.querySelector('#validation-input');
 const onInputBlur = (event) => { 
 	
 	// 1. Якщо довжина вмісту інпута співпадає з data-атрибутом length інпута: 
-	if (event.currentTarget.value.length == inputRef.dataset.length) {
+	if (event.currentTarget.value.trim().length == inputRef.dataset.length) {
 		
 		// якщо у інпута вже є класс invalid, який підсвічує червоним бордер, видаляємо
 		if (inputRef.classList.contains('invalid')) {
