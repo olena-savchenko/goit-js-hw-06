@@ -8,7 +8,7 @@
 
 const inputRef = document.querySelector('#validation-input');
 
-const onInputBlur = (event) => { 
+const onInputBlur = event => { 
 	
 	// 1. Якщо довжина вмісту інпута співпадає з data-атрибутом length інпута: 
 	if (event.currentTarget.value.trim().length == inputRef.dataset.length) {
