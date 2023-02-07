@@ -34,7 +34,7 @@ const onLoginFormSubmit = event => {
 
 	console.log(formData);
 
-	formElements.email.value.reset();
+	formRef.reset();
 	
 }
 

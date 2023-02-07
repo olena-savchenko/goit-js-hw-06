@@ -5,16 +5,19 @@
  Для генерування випадкового кольору використовуй функцію getRandomHexColor
  */
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+ function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
 
 const btnRef = document.querySelector('.change-color');
 const colorRef = document.querySelector('.color');
 
 function onBtnChangeColorClick() {
-  document.body.style.backgroundColor = getRandomHexColor();
-  colorRef.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  document.body.style.backgroundColor = color;
+  colorRef.textContent = color;
 }
 
  btnRef.addEventListener('click', onBtnChangeColorClick);
