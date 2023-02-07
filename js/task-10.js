@@ -22,7 +22,7 @@ const boxesRef = document.querySelector('#boxes');
 
 //  Додаємо слухача подій на button "Create" та button "Destroy"
 btnCreateRef.addEventListener('click', onBtnCreateClick);
-btnDestroyRef.addEventListener('click', onBtnDestroyClick)
+btnDestroyRef.addEventListener('click', onBtnDestroyClick);
 
 // функція обробки події click on button "Create"
 function onBtnCreateClick() {
