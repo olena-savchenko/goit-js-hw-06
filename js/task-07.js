@@ -6,6 +6,8 @@
 
 const inputRangeRef = document.querySelector('#font-size-control');
 const textRef = document.querySelector('#text');
+const minValue = inputRangeRef.getAttribute("min");
+inputRangeRef.value = minValue;
 
 const onRangeInput = event => textRef.style.fontSize = `${event.currentTarget.value}px`;
 

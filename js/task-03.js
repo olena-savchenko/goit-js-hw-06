@@ -26,8 +26,9 @@ const makeImgGalleryMarkup = ({ url, alt } = {}) =>
     <img class="gallery__img" src = '${url}' alt = '${alt}' width ="370">
   </li>`;
 
+
 // створює массив всіх розміток із об'єкта images, перетворює масив на рядок
-const makeImgGallery = images.map(makeImgGalleryMarkup).join("");
+ const makeImgGallery = images.map(makeImgGalleryMarkup).join("");
 
 // отримує посилання на <ul class="gallery"></ul>
 const galleryRef = document.querySelector('.gallery');
